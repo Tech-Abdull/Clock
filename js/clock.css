@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+section{
+    width: 100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #510a0a;
+    display: flex;
+    
+}
+.clock{
+    width: 400px;
+    height: 400px;
+    max-width: 375px;
+    max-height: 375px;
+    border-radius: 50%;
+    border: 4px solid #000;
+    background-image: url(https://raw.githubusercontent.com/antoniocapelo/quickies/master/analog-clock/images/clockFace.png);
+    background-size: cover;
+    position: relative;
+/*  */
+}
+.hour, .min , .sec {
+width: 120px;
+height: 15px;
+top: 50%;
+left: 50%;
+border-radius: 50%;
+position: absolute;
+transform: rotate(-90deg);
+transform-origin: left;
+}
+.centre{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: yellowgreen;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-90deg);
+    transform-origin: left;
+    background: linear-gradient(315deg, #d91c1c, #b71717);
+    box-shadow: -5px -5px 79px #510a0a,
+    5px 5px 79px #ff2a2a;
+    /*  */
+}
+.hour{
+    background-color: black;
+    height: 12px;
+
+}
+.min{
+    background-color: black;
+    height: 8px;
+}
+.sec{
+    background-color: brown;
+}
